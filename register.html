@@ -13,9 +13,8 @@
 
 		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 		<script src="bootstrap-3.2.0/js/bootstrap.min.js"></script>
-
-		<link rel="stylesheet" type="text/css" href="css/register.css">
-
+		<script src="js/register.js"></script>
+		<link rel="stylesheet" href="css/register.css">
 
 	</head>
 
@@ -23,41 +22,44 @@
 		<div id="resignheadback">
 			<div class="container">
 				<h1>注册您的个人账号</h1>
+
 				<p>分享每一天，发现新世界</p>
 
 			</div>
 		</div>
 
-		<div class="panel panel-default" style="margin-top: 10px;margin-left: 30px;margin-right: 30px; border-color: #1778AB;padding-top: 100px;padding-bottom: 100px;">
-			<div class="panel-body">
+		<div class="panel panel-default " style="margin-top: 10px;margin-left: 30px;margin-right: 30px; border-color: #1778AB;padding-top: 100px;padding-bottom: 100px; ">
+			<div class="panel-body ">
 
-				<form role="form" style="width: 300px;padding-left: 50px;">
-					<div class="form-group">
-						<label for="exampleInputEmail1">邮件地址</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+				<form role="form " style="width: 300px;padding-left: 50px; ">
+					<div class="form-group ">
+						<label for="exampleInputEmail1 ">邮件地址</label>
+						<input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" oninput="checkemail(InputEmail1)">
+						<span id="gradeInfo"></span>
 					</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">密码</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-						   <td> 密码字母有大小写之分。6-16位（包括6、16），限用英文、数字。</td>
+
+					<div class="form-group ">
+						<label for="exampleInputPassword1 ">密码</label>
+						<input type="password" class="form-control" id="InputPassword" placeholder="Password">
+
+						<td>密码字母有大小写之分。6-16位（包括6、16），限用英文、数字。</td>
 					</div>
 					<div class="form-group">
 						<label for="exampleInputPassword1">确认你的密码</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="confirm Password">
+						
+						<input type="password" class="form-control" id="InputPassword1" placeholder="confirm Password" oninput="checksamepw(InputPassword,InputPassword1)">
+					   <span id="sameinfo"> </span>
 					</div>
-						<div class="form-group">
-						<label for="exampleInputPassword1">验证码</label>
-						<input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+					<div class="form-group ">
+						<label for="exampleInputPassword1 ">验证码</label>
+						<input type="text" class="form-control" id="验证码" placeholder="">
 					</div>
 					<button type="submit" class="btn btn-default">注册</button>
 				</form>
 
 
-
 			</div>
 		</div>
-
-
 	</body>
 
 </html>
