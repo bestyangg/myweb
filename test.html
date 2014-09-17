@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="content-type" content="text/html" ;charset="utf-8" />
+			<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="bootstrap-3.2.0/css/bootstrap.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="bootstrap-3.2.0/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/yanse.css" />
+
+		
+		<link href="bootstrapswitch/bootstrap-switch.css" rel="stylesheet">
+		<script src="bootstrapswitch/bootstrap-switch.js"></script>
+		
+		
+		
+	</head>
+	<body>
+
+   <table width="831" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr style="display:none">
+     <td height="35" align="center" id="result"> </td>
+   </tr>
+</table>
+<table width="100%" height="256" border="0" align="center" cellpadding="1" cellspacing="1">
+       <tr>
+         <td width="150" align="left" bgcolor="#FFFFFF">   · 用户名称:           </td>
+         <td width="310" align="center" bgcolor="#FFFFFF">
+           <input name="username" type="text" class="inputtext" id="username" onChange="usercheck('check')" onBlur="usercheck('check')">
+         <font color="#FF6633">*</font></td>
+         <td align="left" bgcolor="#FFFFFF" id="check"> 4-16个字符，英文小写、汉字、数字、最好不要全部是数字。td>
+       </tr>
+       <tr>
+         <td width="150" align="left" bgcolor="#FFFFFF">    · 用户密码:</td>
+         <td width="310" align="center" bgcolor="#FFFFFF">
+           <input name="userpwd" type="password" class="inputtext" id="userpwd" onChange="pwdcheck('pwd')" onBlur="pwdcheck('pwd')">
+           <font color="#FF6633">*</font>         </td>
+         <td> 密码字母有大小写之分。6-16位（包括6、16），限用英文、数字。</td>
+       </tr>
+           <tr>
+         <td width="150" align="left" bgcolor="#FFFFFF">   · 重复密码：</td>
+         <td width="310" align="center" bgcolor="#FFFFFF">  
+           <input name="reuserpwd" type="password" class="inputtext" id="reuserpwd" onChange="pwdrecheck('repwd')" onBlur="pwdrecheck('repwd')">
+            <font color="#FF6633">*</font>         </td>
+         <td align="left" bgcolor="#FFFFFF" id="repwd"> 请再次输入登录密码。</td>
+           </tr>
+     </table>
+
+		 
+	</body>
+</html>
