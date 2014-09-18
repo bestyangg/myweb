@@ -13,4 +13,4 @@ if ($frm_action == 'check') {
 	}
 	exit();
 }
-?>
+

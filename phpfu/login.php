@@ -1,7 +1,4 @@
 <?php
-$username = $_POST['username'];
-$password = $_POST['password'];
-$inputid = $_POST['inputid'];
-
-echo $username.$password.$inputid;
+$username = $_POST['inputemail'];
+$password = $_POST['inputpw'];
 ?>
