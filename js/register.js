@@ -3,7 +3,7 @@ function checkemail(abc) {
 	var changeUrl = "http://baikejk.sinaapp.com/GradeAdmin.php?action=check&username=" + username;
 	$.get(changeUrl, function(str) {
 		if (str == '1') {
-			$("#gradeInfo").html("<font color=\"red\">您输入的用户名存在！请重新输入！font>");
+			$("#gradeInfo").html("<font color=\"red\">您输入的用户名存在！请重新输入!</font>");
 		} else {
 			$("#gradeInfo").html("");
 		}

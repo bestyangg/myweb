@@ -1,9 +1,7 @@
 <?php
-$username = $_POST['username'];
-$password = $_POST['password'];
-$inputid = $_POST['inputid'];
+$username = $_POST['inputemail'];
+$password = $_POST['inputpw'];
 
-
-
-
+echo $username;
+echo $password
 ?>
